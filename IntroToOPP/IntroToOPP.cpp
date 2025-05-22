@@ -11,6 +11,7 @@ public:
     Building(int y, string t){
         set_data(y, t);
     }
+    
 
 
     void set_data(int y, string t) {
@@ -20,8 +21,10 @@ public:
     void get_info() {
         cout << "Type: " << type << ". Year:" << year << '\n';
     }
+    ~Building() {
+        cout << "End of the object" << '\n';
+    }
 };
-
 int main()
 {
     SetConsoleCP(1251);
